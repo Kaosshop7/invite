@@ -135,7 +135,6 @@ async def update_leaderboard(guild):
             desc += f"{medal} **อันดับ {i+1}:** <@{user_id}> ➔ `{count}` แต้ม\n"
 
     embed = discord.Embed(title="📊 Leaderboard: อันดับนักเชิญเพื่อน", description=desc, color=0xFFD700)
-    embed.set_footer(text="ระบบป้องกัน: หักแต้มคนออก & แบนไอดีไก่แบบออโต้")
 
     try:
         msg = await channel.fetch_message(top_info["message"])
